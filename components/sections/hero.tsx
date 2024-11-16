@@ -20,7 +20,7 @@ export function Hero() {
                 <span>✨ Introducing MentorClass</span>
               </AnimatedShinyText>
             </div>
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 leading-wide font-disp">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold mb-6 leading-wide font-disp">
               Accelerate your career and learning with MentorClass
             </h1>
             <p className="text-xl sm:text-2xl md:text-3xl text-zinc-700 mb-8">
