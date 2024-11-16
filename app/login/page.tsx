@@ -16,24 +16,23 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4">
-      <div className="absolute top-20 left-10 w-40 h-40 bg-red-400 rotate-45 transform -translate-x-1/2" />
-        <div className="absolute top-40 right-10 w-64 h-64 bg-blue-300 rounded-full transform translate-x-1/2" />
-        <div className="absolute bottom-20 left-20 w-48 h-48 bg-green-400 rounded-full transform -translate-y-1/2" />
-        <div className="absolute top-10 right-20 w-56 h-56 bg-purple-300 transform rotate-12" />
-      <div className="w-full max-w-md space-y-8">
+    <div className="min-h-screen flex items-center justify-center px-4 bg-gray-50 relative">
+      {/* Background Shapes */}
+      <div className="absolute top-10 left-5 w-20 h-20 bg-red-400 rotate-45 transform -translate-x-1/2 z-0 sm:w-32 sm:h-32" />
+      <div className="absolute top-32 right-5 w-32 h-32 bg-blue-300 rounded-full transform -translate-x-1/2 z-0 sm:w-48 sm:h-48" />
+      <div className="absolute bottom-[100px] left-10 w-24 h-24 bg-green-400 rounded-full transform -translate-y-1/2 z-0 sm:w-40 sm:h-40" />
+      <div className="absolute top-16 right-10 w-28 h-28 bg-purple-300 transform rotate-12 z-0 sm:w-44 sm:h-44" />
 
+      {/* Login Content */}
+      <div className="relative w-full max-w-md space-y-8 z-10 bg-white p-6 rounded-lg shadow-md sm:p-8">
         <div className="text-center">
-          {/* <Link href="/" className="inline-flex items-center space-x-3">
-            <span className="text-2xl font-bold">MentorClass</span>
-          </Link> */}
-          <h2 className="mt-6 text-3xl font-bold">Welcome back</h2>
-          <p className="mt-2 text-sm text-muted-foreground">
+          <h2 className="mt-4 text-2xl font-bold sm:text-3xl">Welcome back</h2>
+          <p className="mt-2 text-sm text-gray-500">
             Sign in to continue to your account
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+        <form onSubmit={handleSubmit} className="mt-6 space-y-6">
           <div className="space-y-4">
             <div>
               <Label htmlFor="email">Email</Label>
@@ -62,13 +61,16 @@ export default function LoginPage() {
           <div className="flex items-center justify-between">
             <Link
               href="/forgot-password"
-              className="text-sm text-primary hover:underline"
+              className="text-sm text-blue-500 hover:underline"
             >
               Forgot password?
             </Link>
           </div>
 
-          <Button type="submit" className="w-full bg-blue-500 hover:bg-blue-600">
+          <Button
+            type="submit"
+            className="w-full bg-blue-500 hover:bg-blue-600 text-white"
+          >
             Sign in
           </Button>
 

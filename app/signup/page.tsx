@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { GraduationCap } from "lucide-react";
 
 export default function SignUpPage() {
   const [formData, setFormData] = useState({
@@ -25,19 +24,18 @@ export default function SignUpPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4">
-      <div className="absolute top-20 left-10 w-60 h-60 bg-teal-400 rotate-45 transform -translate-x-1/2" />
-        <div className="absolute top-40 right-10 w-64 h-64 bg-violet-300 rounded-full transform translate-x-1/2" />
-        <div className="absolute bottom-20 left-20 w-48 h-48 bg-pink-400 rounded-full transform -translate-y-1/2" />
-        <div className="absolute top-10 right-20 w-56 h-56 bg-yellow-300 transform rotate-12" />
+    <div className="relative min-h-screen flex items-center justify-center px-4 bg-gray-50 overflow-hidden">
+      {/* Shapes */}
+      <div className="absolute top-10 left-5 w-20 h-20 bg-teal-400 rotate-45 transform -translate-x-1/2 z-0 sm:w-32 sm:h-32" />
+      <div className="absolute top-32 right-5 w-32 h-32 bg-red-300 rounded-full transform -translate-x-1/2 z-0 sm:w-48 sm:h-48" />
+      <div className="absolute bottom-16 left-10 w-24 h-24 bg-purple-400 rounded-full transform -translate-y-1/2 z-0 sm:w-40 sm:h-40" />
+      <div className="absolute top-16 right-10 w-28 h-28 bg-blue-300 transform rotate-12 z-0 sm:w-44 sm:h-44" />
 
-      <div className="w-full max-w-md space-y-8">
+      {/* Content */}
+      <div className="w-full max-w-md bg-white shadow-lg rounded-lg p-6 space-y-8 z-10 relative">
         <div className="text-center">
-          {/* <Link href="/" className="inline-flex items-center space-x-3">
-            <span className="text-2xl font-bold">MentorClass</span>
-          </Link> */}
-          <h2 className="mt-6 text-3xl font-bold">Create your account</h2>
-          <p className="mt-2 text-sm text-muted-foreground">
+          <h2 className="text-3xl font-bold">Create your account</h2>
+          <p className="mt-2 text-sm text-gray-600">
             Join the mentorship community
           </p>
         </div>
