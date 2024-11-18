@@ -49,7 +49,7 @@ export default function Creator() {
           key={index} 
           className={`w-full sm:w-[300px] overflow-hidden ${creator.color} text-white
             sm:rounded-tl-3xl sm:rounded-tr-[4rem] sm:rounded-bl-[4rem] sm:rounded-br-3xl
-            rounded-tr-[4rem] rounded-bl-3xl rounded-br-3xl rounded-tl-3xl`}
+            rounded-3xl`}
         >
           <div className="sm:space-y-4 sm:p-6 p-4 flex sm:flex-col items-start gap-4">
             <div className="relative sm:aspect-square aspect-square w-28 sm:rounded-tr-[4rem] md:rounded-tr-[4rem] sm:w-full overflow-hidden rounded-2xl flex-shrink-0">
