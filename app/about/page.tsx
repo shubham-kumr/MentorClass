@@ -1,4 +1,5 @@
-// pages/about.js
+
+import Creator from '@/components/simple-profile-card';
 import React from 'react';
 
 export default function About() {
@@ -7,7 +8,7 @@ export default function About() {
 
       <section className="bg-blue-500 text-center py-40 sm:py-60 md:py-80 min-h-screen rounded-b-3xl">
         <div className="container max-w-6xl mx-auto px-4">
-          <h1 className="text-6xl sm:text-6xl md:text-7xl lg:text-8xl font-bold">
+          <h1 className="text-6xl sm:text-7xl md:text-7xl lg:text-8xl font-bold">
             Bringing people to connect with mentors and learn new skills
           </h1>
         </div>
@@ -37,23 +38,26 @@ export default function About() {
         <p className="text-lg sm:text-xl md:text-2xl mx-auto text-gray-700 mb-8 max-w-2xl">
           The brains behind MentorClass - say Hi or get support
         </p>
-        <div className="flex flex-wrap justify-center gap-6">
+        {/* <div className="flex flex-wrap justify-center gap-6">
           {[
-            { name: "Shubham Kumar", role: "Backend Developer", color: "bg-blue-200" },
-            { name: "Kirti Wardhan Singh", role: "Frontend Developer", color: "bg-green-200" },
-            { name: "Yogesh Pratap Singh", role: "UX Designer", color: "bg-yellow-200" },
-            { name: "Vishnu Hari Gupta", role: "Representor - MentorClass", color: "bg-red-200" },
+            { name: "Shubham Kumar", role: "Backend Developer", color: "bg-blue-300" },
+            { name: "Kirti Wardhan Singh", role: "Frontend Developer", color: "bg-green-300" },
+            { name: "Yogesh Pratap Singh", role: "UI/UX Designer", color: "bg-yellow-300" },
+            { name: "Vishnu Hari Gupta", role: "Representor - MentorClass", color: "bg-red-300" },
           ].map((mentor, index) => (
             <div key={index} className={`${mentor.color} p-4 rounded-lg w-full sm:w-64 text-left`}>
               <h3 className="text-lg sm:text-xl font-semibold">{mentor.name}</h3>
               <p>{mentor.role}</p>
             </div>
           ))}
+        </div> */}
+        <div className='flex flex-wrap justify-center gap-6'>
+        <Creator/>
         </div>
       </section>
 
 
-      <section className="container py-16 bg-yellow-400 px-4 mx-auto max-w-8xl mb-20 max-h-16xl rounded-3xl">
+      <section className="cont</Card>ainer py-16 bg-yellow-400 px-4 mx-auto max-w-8xl mb-20 max-h-16xl rounded-3xl">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8">FAQs</h2>
         <div className="max-w-2xl mx-auto space-y-4">
           {[
