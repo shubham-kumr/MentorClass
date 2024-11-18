@@ -16,28 +16,28 @@ const creator = [
     role: "Backend Developer",
     color: "bg-blue-500",
     url: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&auto=format&fit=crop",
-    description: "Shubham (he/him) is here to support you with any backend development doubts. From setting up your server to deploying your app, he's got the wisdom and solutions!",
+    description: "Shubham started mentorclass with kirti wardhan to help people connect with mentors and learn new skills.",
   },
   {
     name: "Kirti Wardhan Singh",
     role: "Frontend Developer",
     color: "bg-purple-500",
     url: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&auto=format&fit=crop",
-    description: "Kirti Wardhan Singh (he/him) is here to support you with any frontend development doubts. From setting up your server to deploying your app, he's got the wisdom and solutions!",
+    description: "Kirti Wardhan started mentorclass to help people connect with mentors and learn new skills.",
   },
   {
     name: "Yogesh Pratap Singh",
     role: "UI/UX Designer",
     color: "bg-red-500",
     url: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&auto=format&fit=crop",
-    description: "Yogesh Pratap Singh (he/him) is here to support you with any design doubts. From pixel perfect practical advice to getting hired, landing new clients, and more. He's got the wisdom and solutions!",
+    description: "Yogesh Pratap Singh is here for all your UI/UX design needs. He's has the best UI/UX design and concept in the team.",
   },
   {
     name: "Vishnu Hari Gupta",
-    role: "Representor - MentorClass",
+    role: "Representor",
     color: "bg-green-500",
     url: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&auto=format&fit=crop",
-    description: "Vishnu Hari Gupta (he/him) is here to support you with any design doubts. From pixel perfect practical advice to getting hired, landing new clients, and more. He's got the wisdom and solutions!",
+    description: "Vishnu Hari Gupta is here to represent the MentorClass team. He's got the best advice and solutions for you!",
   },
 ]
 
@@ -61,9 +61,9 @@ export default function Creator() {
                 height={400}
               />
             </div>
-            <div className="space-y-2 flex-1">
-              <h3 className="text-xl font-semibold">{creator.name}</h3>
-              <h4 className="text-sm font-bold uppercase tracking-wider">{creator.role}</h4>
+            <div className="space-y-1 flex-1">
+              <h3 className="text-xl uppercase font-semibold">{creator.name}</h3>
+              <h4 className="sm:text-lg md:text-lg text-sm font-bold uppercase bg-white/50 rounded-full p-2">{creator.role}</h4>
               <p className="text-sm leading-relaxed text-white/90 line-clamp-3 sm:line-clamp-none">
                 {creator.description}
               </p>
