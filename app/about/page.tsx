@@ -1,4 +1,5 @@
 
+import MentorClassSection from '@/components/mentor-class-section';
 import Creator from '@/components/simple-profile-card';
 import React from 'react';
 
@@ -8,29 +9,46 @@ export default function About() {
 
       <section className="bg-blue-500 text-center py-40 sm:py-60 md:py-80 min-h-screen rounded-b-3xl">
         <div className="container max-w-6xl mx-auto px-4">
-          <h1 className="text-6xl sm:text-7xl md:text-7xl lg:text-8xl font-bold">
+          <h1 className="text-7xl sm:text-8xl md:text-7xl lg:text-8xl font-bold">
             Bringing people to connect with mentors and learn new skills
           </h1>
         </div>
       </section>
 
-      <section className="container py-16 sm:py-20 text-center px-4 mx-auto max-w-8xl">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl text-zinc-800 font-semibold tracking-tight mb-8">
-          The MentorClass Way
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-          {[
-            { title: "Knowledgeable Mentors", description: "Handpicked mentors ready to share their expertise and experiences.", color: "bg-blue-300" },
-            { title: "Flexible Scheduling", description: "Book sessions that fit your schedule and learning pace.", color: "bg-green-300" },
-            { title: "Personalized Support", description: "Get tailored guidance to achieve your learning goals.", color: "bg-yellow-300" },
-            { title: "Career Development", description: "Gain skills and insights that make you stand out in the job market.", color: "bg-red-300" },
-          ].map((item, index) => (
-            <div key={index} className={`${item.color} p-6 rounded-lg`}>
-              <h3 className="text-xl sm:text-2xl font-semibold mb-2">{item.title}</h3>
-              <p>{item.description}</p>
-            </div>
-          ))}
+      <section className="py-3 sm:py-20 text-center px-4 mx-auto w-full text-black rounded-3xl">
+      <div className="min-h-screen rounded-3xl flex flex-col items-center justify-center p-16">
+      {/* <div className="relative w-full max-w-4xl">
+        <h1 className="text-5xl font-bold text-center mb-16 text-purple-500">
+          Why Choose MentorClass?
+        </h1>
+        <div className="absolute top-0 left-0 transform -translate-x-12 -translate-y-20">
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            Think freely on an infinite canvas! 🧠
+          </div>
         </div>
+        <div className="absolute top-0 right-0 transform translate-x-10 -translate-y-36">
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            Feel like just doing in-depth writing? Work on your docs in focus mode! 📝
+          </div>
+        </div>
+        <div className="absolute bottom-0 left-0 transform -translate-x-80 translate-y-20">
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            Rich text editing, media embeds and unlimited nesting of everything you create!
+          </div>
+        </div>
+        <div className="absolute bottom-0 right-0 transform translate-x-80 translate-y-10">
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            Connect things on your board. Visualize everything from relationships to workflows. 🔗
+          </div>
+        </div>
+        <div className="absolute bottom-1/2 left-1/2 transform -translate-x-1/2 translate-y-64">
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            Why should writing have to be linear, when creative thinking isn’t? 🤔
+          </div>
+        </div>
+      </div> */}
+      <MentorClassSection />
+    </div>
       </section>
 
       <section className="py-16 text-center text-black px-4">
@@ -57,7 +75,7 @@ export default function About() {
       </section>
 
 
-      <section className="cont</Card>ainer py-16 bg-yellow-400 px-4 mx-auto max-w-8xl mb-20 max-h-16xl rounded-3xl">
+      <section className="py-16 bg-yellow-400 px-4 mx-auto w-11/12 mb-20 max-h-16xl rounded-3xl">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8">FAQs</h2>
         <div className="max-w-2xl mx-auto space-y-4">
           {[
@@ -74,8 +92,8 @@ export default function About() {
       </section>
 
 
-      <footer className="container bg-blue-600 text-white py-8 text-center px-4 mx-auto max-w-8xl mb-20 max-h-16xl rounded-3xl">
-        <p className="text-lg sm:text-xl md:text-2xl font-bold">
+      <footer className="bg-blue-600 text-white py-8 text-center px-4 mx-auto w-11/12 max-h-16xl rounded-3xl">
+        <p className="text-xl sm:text-2xl md:text-3xl font-bold">
           Keep up to date with MentorClass by joining our newsletter!
         </p>
         <div className="mt-4 flex flex-col sm:flex-row justify-center gap-4">
